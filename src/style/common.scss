@@ -1,0 +1,824 @@
+body, div, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    box-sizing: border-box;
+    //font-family: "Microsoft Yahei",sans-serif;
+    font-family:PingFangSC-Regular;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    height: auto;
+    &:focus {
+        outline: none;
+    }
+}
+
+#app{
+  height:100%;
+  overflow: scroll;
+  background-color: #fff;
+  -webkit-overflow-scrolling : touch;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow-y:auto;
+}
+
+.el-icon-arrow-up:before {
+  content: "" !important;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddingTop{
+    padding-top: 1.95rem;
+}
+.el-select .el-input__inner{
+  border: 0!important;
+}
+.el-date-editor input[type=text]{
+  border: 0!important;
+
+}
+.filterc .el-icon-caret-top:before{
+    content:"" !important;
+}
+.f-right .el-input__inner{
+    margin-bottom: 0 !important;
+}
+.grid-content3 .el-icon-more:before{
+    color: #CFCCCC;
+}
+.el-message-box__wrapper{
+  position: fixed !important;
+  top: 5rem;
+  bottom: 0;
+  left: 0;
+  /* right: 0; */
+  text-align: center;
+}
+.el-message-box {
+  display: inline-block;
+  width: 300px !important;
+  margin-top:-100px !important;
+
+}
+.el-input--suffix .el-input__inner{
+  padding-right: 15px !important;
+  color:#222 !important;
+}
+
+
+.clientComp .el-collapse-item__header{
+    padding-left: 1rem;
+    //height: 2.5rem;
+    line-height: 2.5rem;
+}
+.div .input{
+    width:13.3rem ;
+    height: 1.5rem;
+    margin-bottom: 0;
+    background: #F8F9FB ;
+}
+.div .el-input__inner:hover{
+    border-color:#8391a5;
+}
+.content .el-input__inner{
+  text-align: right;
+}
+.content .el-input__icon{
+  //margin-left: 3rem;
+  display: none;
+}
+.el-scrollbar__wrap{
+  overflow: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.elitemBox .el-collapse-item__arrow{
+  line-height: 2.5rem;
+}
+.el-collapse-item.is-active .el-collapse-item__header{
+  border-bottom-color:#E6EBF5;
+}
+.el-collapse-item{
+  border-bottom: 1px solid;
+}
+.el-collapse-item:last-child{
+  border-bottom: 1px solid #fff;
+}
+.clientBig1 .el-collapse-item__header{
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+.clientBig1 .el-collapse-item__arrow{
+  line-height: 2.5rem;
+}
+.clientBig1 .el-collapse-item__content{
+  margin-top: 0.5rem;
+}
+.content .el-input__inner:hover{
+  border: none;
+}
+.content .el-input__inner{
+  border: none;
+}
+.plhfr .el-input__inner {
+  margin-bottom: 0;
+  width: 9rem;
+}
+.contentright .el-input__inner{
+  text-align: right;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.idea .el-input__inner{
+  background: #fff;
+  margin-bottom: 0;
+}
+.idea .el-input.is-disabled .el-input__inner{
+  background: #fff;
+}
+.publicthree .el-collapse-item__content{
+  padding-bottom: 0 ;
+}
+.publicthree .grid-content[data-v-66b96db9]{
+  text-align: center;
+  margin: 0;
+}
+ .el-input__prefix{
+  //right: -1rem;
+  transition: all .3s;
+}
+.astronomy .el-collapse-item__content{
+  padding-bottom: 0;
+}
+//客户黑名单
+.wrap .el-tabs__header{
+  height: 2.22rem;
+  background:rgba(255,255,255,1);
+}
+.wrap .el-tabs__item {
+  width: 50%;
+  //height:0.72rem;
+  font-size:0.77rem;
+  font-family:PingFangSC-Regular;
+}
+.wrap .el-tabs__active-bar{
+  width: 4.16rem !important;
+  height: 0.11rem !important;
+}
+.wrap .mui-bar .mui-icon{
+  padding-top: 4px;
+}
+.wrap .el-tabs__nav-wrap::after{
+  width: 0;
+}
+.wrap .el-tabs--bottom .el-tabs__item:nth-child(2), .wrap .el-tabs--top .el-tabs__item:nth-child(2) {
+  padding-left: 16px !important;
+}
+
+.login .el-form-item__content{
+  line-height: 20px !important;
+}
+
+// 设置身份证列表样式
+.cardWrap .el-collapse-item__header{
+  height:2.5rem;
+  font-size:0.88rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(51,51,51,1);
+  padding-left: 1rem;
+}
+.cardWrap .el-collapse-item__wrap{
+  width: 100%;
+  height: 5.1rem;
+  padding-left: 0.916rem ;
+  padding-bottom: 0.77rem;
+  padding-top: 0.4rem;
+  background: #FCFEFE;
+}
+.cardWrap  .el-collapse-item__content{
+  width: 100%;
+  height:100%;
+  background:rgba(252,254,254,1);
+
+}
+.cardWrap  .el-collapse-item__content div{
+  height: 0.694rem;
+  line-height: 0.694rem;
+  margin-bottom: 0.694rem;
+}
+.cardWrap  .el-collapse-item__content .tit1{
+  width:3.25rem;
+  height:0.69rem;
+  font-size:0.72rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(136,136,136,1);
+  line-height:1.638rem;
+}
+.cardWrap  .el-collapse-item__content .value1{
+  font-size:0.77rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(34,34,34,1);
+  line-height:0;
+}
+.el-collapse{
+  border-top: none !important;
+}
+
+//activityDetail里面的table颜色
+.activityDetail .el-table th{
+  background-color: #EEEEEE !important;
+  text-align: center;
+  color:#555555 !important;
+}
+.filterBox .el-input--small .el-input__inner {
+  height: 24px;
+}
+
+.moreInformCont .el-checkbox__inner{
+  margin-left: 15px !important;
+  border-radius: 9px !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 17px !important;
+  height: 17px !important;
+}
+
+
+.el-textarea__inner:hover{
+  border:none !important;
+}
+ textarea{
+  border:none !important;
+  font-size:16px;
+}
+#Seecustomer .el-textarea__inner{
+  resize:none !important;
+  font-size:16px;
+  color:#222;
+  min-height: 32px !important;
+}
+
+//设置关注客户样式
+.card{
+  width: 100%;
+}
+.card .el-collapse-item__header{
+  height:2.5rem;
+  font-size:0.88rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(51,51,51,1);
+  padding-left: 1rem;
+}
+.card .el-collapse-item__wrap{
+  width: 100%;
+  height: 6.66rem;
+  padding-left: 0.916rem ;
+  padding-bottom: 0.77rem;
+  padding-top: 0.4rem;
+  background: #FCFEFE;
+}
+.card  .el-collapse-item__content {
+  width: 100%;
+  height: 100%;
+  background: rgba(252, 254, 254, 1);
+}
+
+
+//潜客查看 跟进意见
+.el-input.is-disabled .el-input__inner{
+  background-color: #fff !important;
+}
+.el-input__prefix{
+  display: none;
+}
+/*潜客录入： 修改textarea对齐方式*/
+#customerPage .el-textarea__inner{
+  resize:none !important;
+  font-size: 16px;
+  color:#222 !important;
+  min-height: 32px !important;
+  text-align: left;
+  line-height:32px !important;
+}
+/*设置placeholder右对齐*/
+#customerPage textarea::-webkit-input-placeholder{
+  text-align: left;
+}
+#customerPage .yxje::-webkit-input-placeholder{
+  text-align: left;
+  color: #C0C4CC;
+}
+/*修改输入内容左对齐显示*/
+#customerPage select[data-v-55d2a981]{
+  //width: 207px;
+  width: 195px;
+  padding: 5px 10px !important;
+}
+#customerPage .el-textarea__inner{
+  padding: 5px 10px !important;
+}
+#customerPage input[type=text][data-v-55d2a981]{
+  width: 195px;
+  padding: 5px 10px !important;
+}
+
+#customerPage .mint-button--large[data-v-55d2a981]{
+  text-align: left !important;
+}
+
+#customerPage .el-textarea__inner{
+  width: 195px;
+}
+
+#customerPage .el-input{
+  font-size:16px !important;
+}
+#Seecustomer .el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 130px !important;
+}
+.card  .el-collapse-item__content div{
+  height: 0.694rem;
+  line-height: 0.694rem;
+  margin-bottom: 0.694rem;
+}
+.card  .el-collapse-item__content .tit2{
+  width:3.25rem;
+  height:0.69rem;
+  font-size:0.72rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(136,136,136,1);
+  line-height:1.638rem;
+}
+.card  .el-collapse-item__content .value2{
+  font-size:0.77rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(34,34,34,1);
+  line-height:0px;
+}
+
+
+
+.marketing .el-textarea__inner{
+  border: none !important;
+  text-align: left;
+  color:#888 !important;
+  resize: none;
+  padding:0;
+  padding-right: 15px;
+  line-height:20px;
+  font-size:14px;
+  direction: rtl;
+}
+.marketing .el-collapse-item__header{
+  border-bottom:none;
+}
+.marketing .el-collapse-item__content{
+  padding-bottom: 0 !important;
+}
+//取消双击，单机效果
+* {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+//修改小圆点底部距离
+#temp .mint-swipe-indicators{
+  position: absolute;
+  bottom: 12px !important;
+  left: 50%;
+}
+//修改宫格与内容区的间距
+#temp .mui-content>.mui-table-view[data-v-3a21f120]:first-child {
+  margin-top: 0 !important;
+  margin-bottom: 0.66rem!important;
+}
+
+//以下为陈青代码请勿添加
+body{
+  position: relative;
+}
+.mainProductBox .el-table__empty-text{
+  z-index: 9;
+}
+.el-tabs--bottom .el-tabs__item.is-bottom:nth-child(2), .el-tabs--bottom .el-tabs__item.is-top:nth-child(2), .el-tabs--top .el-tabs__item.is-bottom:nth-child(2), .el-tabs--top .el-tabs__item.is-top:nth-child(2) {
+  padding-left: 3px;
+}
+.morehead .el-tabs__nav{
+  transform: translateX(23px) !important;
+}
+.myplugn .el-dialog{
+  width:90% !important;
+}
+.myplugn .mui-table-view:after{
+  height:0px !important;
+}
+.myplugn .el-dialog__wrapper{
+  overflow: unset;
+}
+.moreBox .el-button[data-v-53890778]{
+  margin-left: 0px;
+}
+.moreBox .el-button--primary{
+  border:none;
+}
+.moreBox .el-button{
+  font-size:18px;
+  padding: 0;
+}
+.moreActivityBox[data-v-5557c36a]{
+  height: auto  ;
+}
+
+.v-modal{
+  display: none;
+  opacity: 0 !important;
+}
+.el-dialog__wrapper{
+  z-index: 0 !important;
+}
+.morehead .el-tabs__item.is-active{
+  color:red !important;
+}
+.morehead .el-tabs__active-bar{
+  background-color:red !important;
+
+}
+
+.morehead .el-tabs__nav-scroll{
+  overflow: scroll !important;
+}
+.el-tabs__item:hover{
+  color:#000 !important;
+}
+.clientyingbox .el-row{
+  border-bottom: 1px solid #cccccc !important;
+}
+.moreInformBox .informCont[data-v-9addb2b6]{
+  margin-top: 0 !important;
+}
+.el-collapse-item__header{
+  padding-left:1rem;
+}
+
+.moreInformBox .el-input.is-disabled .el-input__inner{
+  color:#222 !important;
+}
+.el-select-dropdown__wrap{
+  max-height: 600px !important;
+}
+ .el-select-dropdown{
+  //top: 44px !important;
+}
+.el-popper[x-placement^=bottom] .popper__arrow{
+  border-bottom:none;
+}
+.page2 .el-textarea__inner{
+  resize:none !important;
+  line-height: 2.5 !important;
+}
+.cardWrap .el-collapse-item__arrow{
+  float: inherit;
+  position:absolute;
+  right: 0.5rem;
+}
+ .login .el-dialog{
+  width: 80% !important;
+}
+.login .el-dialog__body{
+  padding: 3px 20px !important;
+}
+.moreInformCont .el-collapse-item__content{
+  padding-bottom: 10px !important;
+}
+//以上为陈青代码请勿添加
+
+/*工作日报模块：添加返回与图标之间的距离*/
+.mui-bar-nav img[data-v-a2006ea4] {
+  margin-right: 0.416rem
+;
+}
+.moreBox .el-textarea.is-disabled .el-textarea__inner{
+  background-color: #fff;
+  color:#000;
+}
+.el-message{
+  top:60px !important;
+}
+.astronomy .el-collapse-item__header{
+  padding-left: 5px;
+}
+/*工作日报模块：日期抬头居中对齐*/
+#app .calendar-info>div.month .month-inner>span[data-v-c9634d5e]{
+  font-size: 0.88rem !important;
+}
+.calendar .calendar-info>div.month[data-v-c9634d5e]{
+ /* position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);*/
+  position: absolute !important;
+  left: 0;
+  top: 8px;
+  margin-left: 35% !important;
+
+}
+.calendar-info[data-v-c9634d5e]{
+  width: 100%;
+  height: 40px;
+}
+.calendar-tools[data-v-c9634d5e]{
+  position: relative;
+}
+/*晨曦会： 设置姓名栏样式，箭头大小，左右间距*/
+.calendar_wrap .mui-table-view-cell[data-v-6a598a03]{
+  padding: 10px 30px !important;
+}
+.calendar_wrap .mui-navigate-right:after,.calendar_wrap .mui-push-right:after{
+  font-size: 1.5rem !important;
+}
+.calendar_wrap .mui-table-view-cell.mui-active[data-v-6a598a03]{
+  background-color: #fff !important;
+}
+/*目标达成： 设置头部与内容区的间距*/
+.temp .mui-bar-nav[data-v-a2006ea4]{
+  box-sizing: content-box;
+}
+
+/*分中心负责人： 修改图标的大小*/
+.temp .top .el-progress-circle{
+  width: 5rem !important;
+  height: 5rem !important;
+}
+
+.temp .cir[data-v-4d47ff12]{
+  border-bottom: 1px solid #E5E5E5 !important;
+}
+
+
+/*目标达成： 设置个人详情页面图标中字体的位置*/
+.jin[data-v-222ab8bc] {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  top: 1.5em !important;
+  left: 2.1em !important;
+}
+.mu[data-v-222ab8bc] {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+  top: 1.5em !important;
+  right: 2.1em !important;
+}
+/*目标达成: 修改金额、客户经理对齐方式*/
+.temp .fl[data-v-41ac0ff1]{
+  text-align: left !important;
+  padding: 0.5em !important;
+}
+.khjl[data-v-4d47ff12], .khs[data-v-4d47ff12]{
+  text-align: left !important;
+  padding: 0.5em !important;
+  line-height: 2 !important;
+}
+/*目标达成:修改名字的字体大小 */
+.temp .ulcontent .pl .name1{
+  font-size: 0.77rem !important;
+}
+/*目标达成: 修改'工作总结'字体大小*/
+.page-navbar  .mint-tab-item-label{
+  font-size: 0.83rem !important;
+}
+
+/*高管看板： 修改标题大小*/
+.mui-bar-nav .mui-title[data-v-3246fb8a]{
+  font-size: 0.88rem !important;
+}
+.topmainBox .leftCol span[data-v-3cf47ab5]{
+  font-size: 0.77rem !important;
+}
+.topmainBox .el-icon-arrow-right:before{
+  font-size: 0.8rem !important;
+}
+/*高管看板：设置横屏“查看详情”按钮样式*/
+.toMainHeader .el-button--small{
+  width: 4.66rem;
+  height: 1.25rem;
+  line-height: 0rem;
+  margin-top: 5px;
+}
+/*产品模块：修改标题边框(设置样式不生效)*/
+.producAll .el-row[data-v-0b720f13]{
+  border-left: none !important;
+  border-right: none !important;
+}
+.mainProductBox .mui-bar-nav[data-v-a2006ea4]{
+  border-bottom: none;
+}
+/*工作日报： 设置输入文字字体颜色*/
+.jobModule .job_plan  .el-textarea__inner{
+  color: #222 !important;
+  font-size:0.88rem;
+}
+/*修改首页九宫格图标大小*/
+#temp .mui-content .mui-icon[data-v-3a21f120]{
+  display: inline-block;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+}
+/*客户群管理：修改添加客户筛选输入框样式*/
+.infoWrap input[type=text]{
+  height:100% !important;
+}
+/*零售客户： 修改产品信息样式*/
+.clientYewuthree .el-collapse-item__content{
+  padding-bottom: 0 !important;
+}
+.clientYewuthree .el-collapse-item.is-active .el-collapse-item__header{
+  border-bottom: none !important;
+  padding-left: 5%;
+  font-size:0.88rem !important;
+  font-family:PingFangSC-Regular;
+}
+.clientYewuthree  .el-collapse-item__header{
+  padding-left: 5%;
+  font-size:0.88rem !important;
+  font-family:PingFangSC-Regular;
+}
+.clientYewuthree .depositWrap .grid-content[data-v-2d68e149]{
+  font-size:0.88rem;
+  font-family:PingFangSC-Regular;
+}
+.clientYewuthree .depositWrap .el-col-12{
+  font-size:0.88rem;
+  font-family:PingFangSC-Regular;
+}
+/*修改对公--产品信息样式*/
+.publicYewuthree .el-collapse-item__header{
+  padding-left: 15px;
+  font-size:0.88rem;
+  font-family:PingFangSC-Regular;
+  color:rgba(51,51,51,1);
+}
+.publicYewuthree .el-collapse-item__wrap{
+  font-size:0.88rem !important;
+  font-family:PingFangSC-Regular !important;
+}
+.publicthree .el-collapse-item__content{
+  font-size:0.88rem !important;
+  font-family:PingFangSC-Regular !important;
+}
+/*.publicthree  [class*=el-col-]{
+  width: 33.333%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.publicthree .grid-content[data-v-66b96db9]{
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}*/
+/*修改对公、零售业务概览，账户信息样式*/
+.clientComp .el-tabs__item{
+  text-align: center;
+/*  padding: 0 !important;*/
+}
+.clientComp .el-collapse-item__content{
+  padding-bottom: 0 !important;
+}
+
+#clientLS .el-tabs--top .el-tabs__item:nth-child(2){
+  padding-left: 20px !important;
+}
+.LSzhanghu .el-collapse-item__header{
+  padding-left: 0.5rem!important;
+}
+/*修改营销活动效果追踪样式*/
+.el-tabs__nav-wrap.is-scrollable{
+  padding: 0 15px !important;
+}
+/*营销：*/
+.contextBox .inputWrap  .el-input__inner{
+  border: none !important;
+}
+.infomaBox .el-input__inner{
+  border: none !important;
+}
+.clientyingbox .el-input__inner{
+  border: none !important;
+}
+/*对公——关联客户*/
+.astronomy  .el-collapse-item__header{
+  padding-left: 15px;
+  font-size:0.88rem !important;
+  font-family:PingFangSC-Regular;
+  color:rgba(51,51,51,1);
+}
+/*营销活动总结与分析： 折叠面板箭头样式*/
+.marketing .el-collapse-item__arrow{
+  margin-right: 1rem !important;
+}
+/*修改担保信息样式*/
+.clientBig111 .el-collapse-item__header{
+  padding-right: 1rem !important;
+}
+/*修改零售客户提醒消息*/
+.clientyingbox .f-right .el-input__inner{
+  margin: 0 !important;
+  text-align: center!important;
+  font-size: 0.88rem !important;
+  color: #888888 !important;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
